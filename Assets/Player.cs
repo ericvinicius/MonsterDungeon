@@ -20,9 +20,12 @@ public class Player : MonoBehaviour
     {
         direction_x = Input.GetAxis("Horizontal");
         direction_y = Input.GetAxis("Vertical");
+
+        transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
     void FixedUpdate() {
         rig.velocity = new Vector2(direction_x * speed, direction_y * speed);
+        //rig.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 }
