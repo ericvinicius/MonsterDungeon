@@ -6,7 +6,6 @@ public class Game : MonoBehaviour
 {
 
     public SpriteRenderer enemySprite;
-    public List<SpriteRenderer> enemies;
 
     public int initial_enemies;
 

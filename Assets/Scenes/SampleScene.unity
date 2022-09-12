@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 121759974}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   rig: {fileID: 121759973}
-  playerPosition: {x: 0, y: 0, z: 0}
+  hp: 5
+  player: {fileID: 0}
 --- !u!50 &121759973
 Rigidbody2D:
   serializedVersion: 4
@@ -371,7 +372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySprite: {fileID: 121759970}
-  enemies: []
   initial_enemies: 50
 --- !u!68 &172680647
 EdgeCollider2D:
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 1044283724}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,7 +619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2716f101cb3de542823113d052cf53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 50
   speed: 5
   rig: {fileID: 1044283723}
+  spell: {fileID: 7024155347202725056, guid: e9687df979aba4abda2fdc846364c281, type: 3}
   direction_x: 0
   direction_y: 0
